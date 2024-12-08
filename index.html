@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en-us">
 	<head>
-    <!--_--------------{  Meta Code's  }---------------_-->
-		<meta charset="UTF-8">
-		<meta name="description" content="Free Web tutorials">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<meta name="robots" content="INDEX, FOLLOW">
-	<!--//--------------{  Meta Code's  }---------------//-->
+    <!--G_--------------{  Meta Code's  }---------------_-->
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Bisakto-Rahi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="robots" content="INDEX, FOLLOW">
+        <!--R <meta http-equiv="refresh" content="30"> -->
+    <!--//_--------------{  Meta Code's  }---------------_-->
+    <!--W_---------------{  Create  Date : 23/11/2024  }---------------_-->
+    <!--W_---------------{  Last Update  : 23/11/2024  }---------------_-->
         <title> 
-			Checkout Form
+			E-commerce Form
 		</title>
-    <!--_---------------{  Added Favicon   }---------------_-->
+    <!--I_---------------{  Added Favicon   }---------------_-->
 		<link rel="icon" href="assets/favicon.png" type="image/x-icon">
-    <!--_---------------{  My Style Sheet CDN  }---------------_-->
+    <!--I_---------------{  My Style Sheet CDN  }---------------_-->
         <link rel="stylesheet" href="style.css">
-    <!--_---------------{  Bootstrap 5 CSS CDN  }---------------_-->
+    <!--I_---------------{  Bootstrap 5 CSS CDN  }---------------_-->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-	<!--_---------------{  Font Awesome Pro-icon CDN  }---------------_-->
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css">	
+	<!--I_---------------{  Font Awesome Pro-icon CDN  }---------------_-->
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css">	
 
     </head>
 	<body>
+    <!--Y_---------------{  E-commerce Form section  }---------------_-->
 		<div class="my-website">
-        <!--todo---------------{  Start Header section  }---------------_-->
-			<header> 
+        <!--G_---------------{  Start Header section  }---------------_-->
+			<header>
                 <div class="row">
+                <!--O_-----------{  Start Form section  }-----------_-->
                     <div class="col-9">
                         <div class="container">
+                        <!---_-----------{  Form Title section }-----------_-->
                             <h2 class="py-4 fw-bolder fa-3x">Billing address</h2>
                             <form action="mailto:bisaktorahi007@gmail.com" class="was-validated" enctype="text/plain" method="post">
+                                <!---_-----------{  name Section  }-----------_-->
                                 <div class="row pb-4">
+                                <!---_-----------{  First name box  }-----------_-->
                                     <div class="col-6">
                                         <div class="form-group">
                                             <label for="fname" class="form-label">First name</label>
                                              <input type="text" class="form-control" placeholder="Enter your First name ..." required>
                                         </div>
                                     </div>
+                                <!---_-----------{  Last name box  }-----------_-->
                                     <div class="col-6">
                                         <div class="form-group">
                                             <label for="lname" class="form-label">Last name</label>
@@ -45,6 +56,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!---_-----------{  User name section  }-----------_-->
                                 <div class="form-group pb-4">
                                     <label for="Username" class="form-label">Username</label>
                                     <div class="input-group">
@@ -52,20 +64,25 @@
                                         <input type="text" class="form-control" placeholder="Enter your Username ..." required>
                                     </div>
                                 </div>
+                                <!---_-----------{  Email section  }-----------_-->
                                 <div class="form-group pb-4">
                                     <label for="exampleInputEmail1" class="form-label">Email <span class="gray">(Optional)</span></label>
                                     <input type="email" class="form-control" placeholder="you@example.com">                        
                                 </div>
+                                <!---_-----------{  Address section  }-----------_-->
                                 <div class="form-group pb-4">
                                     <label for="address" class="form-label">Address</label>
                                     <input type="text" class="form-control" placeholder="1234 Main St" required>                        
                                 </div>
+                                <!---_-----------{  address-2 section  }-----------_-->
                                 <div class="form-group pb-4">
                                     <label for="address" class="form-label">Address 2 <span class="gray">(Optional)</span></label>
                                     <input type="text" class="form-control" placeholder="Apartment or suite">
                                 </div>
+                                <!---_-----------{  Country, State, Zip select section  }-----------_-->
                                 <div class="form-group pb-4">
                                     <div class="row">
+                                    <!---_-----------{  Country select box  }-----------_-->
                                         <div class="col-md-6">
                                             <label for="validationCustom03" class="form-label">Country</label>
                                             <select class="form-select" id="validationCustom04" required>
@@ -76,6 +93,7 @@
                                               Please provide a valid city.
                                             </div>
                                           </div>
+                                    <!---_-----------{  State select box  }-----------_-->
                                           <div class="col-md-3">
                                             <label for="validationCustom04" class="form-label">State</label>
                                             <select class="form-select" id="validationCustom04" required>
@@ -86,6 +104,7 @@
                                               Please select a valid state.
                                             </div>
                                           </div>
+                                    <!---_-----------{  Zip select box  }-----------_-->
                                           <div class="col-md-3">
                                             <label for="validationCustom05" class="form-label">Zip</label>
                                             <input type="text" class="form-control" id="validationCustom05" required>
@@ -96,6 +115,7 @@
                                     </div>
                                 </div>
                                 <hr>
+                                <!---_-----------{  Check box section }-----------_-->
                                 <div class="form-group">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -111,6 +131,7 @@
                                     </div>
                                 </div>
                                 <hr>
+                                <!---_-----------{  Payment section }-----------_-->
                                 <div class="form-group py-4">
                                     <h2 class="pb-3">Payment</h2>
                                     <div class="radio">
@@ -126,22 +147,20 @@
                                          <label class="form-check-label text-black" for="validationFormCheck2">Paypal</label>
                                     </div>
                                 </div>
-                                
-        
-        
-        
-        
-        
                                 <hr>
+                                <!---_-----------{  Submit btn section }-----------_-->
                                 <input class="btn w-100 btn-secondary" type="button" value="Continue to checkout">
                             </form>
                         </div>
                     </div>
+                <!--O_-----------{  Start Card section  }-----------_-->
                     <div class="col-3">
                         <div class="card border-0">
+                        <!---_-----------{  card heading section }-----------_-->
                             <div class="card-head">
                                 <h3>Your cart <span class="badge text-end bg-secondary">3</span></h3>
                             </div>
+                        <!---_-----------{  card Body section }-----------_-->
                             <div class="card-body">
                                 <div class="line-01 border p-2">
                                     <h5 class="">Product name</h5>
@@ -164,6 +183,7 @@
                                     <h6>lorem</h6>
                                 </div>
                             </div>
+                        <!---_-----------{  card btn section }-----------_-->
                             <div class="box">
                                 <div class="under">
                                     <div class="input"></div>
@@ -172,24 +192,19 @@
                         </div>
                     </div>
                 </div>
-                
 			</header>
-        <!--//---------------{  Header section  }---------------//-->
-        <!--todo---------------{  Start Footer section  }---------------_-->
+        <!--//_---------------{  Header section  }---------------//-->
+        <!--G_---------------{  Start Footer section  }---------------_-->
             <footer>
 			</footer>
-        <!--//---------------{  Footer section  }---------------//-->
+        <!--//_---------------{  Footer section  }---------------//-->
         </div>
-        <!--todo---------------{  My Java Script CDN  }---------------_-->
+        <!--I_---------------{  My Java Script CDN  }---------------_-->
 			<script src="index.js"></script>
-	    <!--todo---------------{  Bootstrap 5 JS CDN  }---------------_-->
+	    <!--I_---------------{  Bootstrap 5 JS CDN  }---------------_-->
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
-	    <!--//---------------{  Bootstrap 5 JS CDN  }---------------//-->
+	    <!--//_---------------{  Bootstrap 5 JS CDN  }---------------//-->
 	</body>
 </html>
-<!--todo---------------{  Add Description  }---------------_-->
-
-
-<!--//---------------{  Description  }---------------_-->

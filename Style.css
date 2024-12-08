@@ -1,4 +1,93 @@
-  /*//--------------{  Default Style For all  }--------------//*/
-  .gray{
-    color: var(--gray-600);
-  }
+@charset "UTF-8";
+
+/*I_---------{  google font-family CDN  }---------- */
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@400..700&family=Merienda:wght@300..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Salsa&display=swap');
+
+/*W_----------{  Author      :   Bisakto-Rahi  }----------_*/
+/*W_----------{  Create      :   23/11/2024    }-----------_*/
+
+/*G_--------------{  Start Default Style For all  }--------------_*/
+/*-_----------{  My Color Variables  }----------_*/
+:root {
+  --red: #fc2a1b;
+  --dark: #212529;
+  --gray: #6c757d;
+  --white: #ffffff;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --black: #000000;
+  /*-_----------{  Website Font Variables  }----------_*/
+  --font-1: "Salsa", cursive;
+}
+/*R_----------{  Last Update   :   26/11/2024   }----------_*/
+
+/*O_----------{  My some Font Classes  }---------- */
+*{
+  font-family: var(--font-1);
+}        /*Y_----------{  Font weight : 0nly 400 are available  }---------- */
+.center{
+    text-align: center;
+}
+.justify{
+    text-align: justify;
+}
+/*//_----------{  My some Font Classes  }---------- */
+/*G_-------------{  default Style for Full-Website  }---------------_*/
+*{
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+:hover,
+:active,
+:focus{
+  outline: 0;
+  outline-offset: 0;
+}
+a,
+a:hover{
+  text-decoration: none;
+}
+body{
+  max-width: 100%;
+  font-size: 100%;
+  font-family: var(--my-font-1);
+  line-height: 1.5;
+  color: var(--gray-900);
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+/*K_----------{  Scrollbar style  }---------- */
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  width: 0.625rem;
+}
+::-webkit-scrollbar-track{
+  background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #000;
+}
+/*//_--------------{  Default Style For all  }--------------_*/
+/*G_--------------{  Start Header Section Style  }--------------_*/
+/*O_--------{  Some Common class  }---------_*/
+.gray{
+  color: var(--gray-600);
+}
+/*//_--------------{  Header Section Style  }--------------_*/
+/*G_--------------{  Start Footer Section Style  }---------------_*/
+
+/*//_--------------{  Footer Section Style  }--------------_*/
