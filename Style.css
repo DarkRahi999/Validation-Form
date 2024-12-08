@@ -83,11 +83,30 @@ html{
 }
 /*//_--------------{  Default Style For all  }--------------_*/
 /*G_--------------{  Start Header Section Style  }--------------_*/
+.my-container{
+  margin: 0 5%;
+}
+.title{
+  font-size: 38px;
+}
+.pera{
+  font-size: 14px;
+}
 /*O_--------{  Some Common class  }---------_*/
 .gray{
   color: var(--gray-600);
 }
+.right{
+  float: right;
+}
+.box{
+  width: 90%;
+  margin: auto ;
+}
 /*//_--------------{  Header Section Style  }--------------_*/
 /*G_--------------{  Start Footer Section Style  }---------------_*/
-
+footer p{
+  float: right;
+  padding-right: 20px;
+}
 /*//_--------------{  Footer Section Style  }--------------_*/

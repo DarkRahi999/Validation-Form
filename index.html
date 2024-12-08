@@ -31,13 +31,19 @@
     <!--Y_---------------{  E-commerce Form section  }---------------_-->
 		<div class="my-website">
         <!--G_---------------{  Start Header section  }---------------_-->
-			<header>
+			<header class="container center">
+                <h1 class="fa-3x fw-bolder">Checkout Form</h1>
+                <p class="gray pera">Below is an example form built entirely with bootstraps form controls. Each required form group has a validation state that <br> can be triggered by attempting to submit the form without completing it.</p>
+			</header>
+        <!--//_---------------{  Header section  }---------------//-->
+        <div class="main">
+            <div class="my-container">
                 <div class="row">
                 <!--O_-----------{  Start Form section  }-----------_-->
                     <div class="col-9">
                         <div class="container">
                         <!---_-----------{  Form Title section }-----------_-->
-                            <h2 class="py-4 fw-bolder fa-3x">Billing address</h2>
+                            <h2 class="py-4 fw-bolder title">Billing address</h2>
                             <form action="mailto:bisaktorahi007@gmail.com" class="was-validated" enctype="text/plain" method="post">
                                 <!---_-----------{  name Section  }-----------_-->
                                 <div class="row pb-4">
@@ -45,7 +51,7 @@
                                     <div class="col-6">
                                         <div class="form-group">
                                             <label for="fname" class="form-label">First name</label>
-                                             <input type="text" class="form-control" placeholder="Enter your First name ..." required>
+                                             <input type="text" class="form-control" placeholder="Enter your First name ..." minlength="5" required>
                                         </div>
                                     </div>
                                 <!---_-----------{  Last name box  }-----------_-->
@@ -87,7 +93,11 @@
                                             <label for="validationCustom03" class="form-label">Country</label>
                                             <select class="form-select" id="validationCustom04" required>
                                                 <option selected disabled value="">Choose...</option>
-                                                <option>...</option>
+                                                <option>Bangladesh</option>
+                                                <option>India</option>
+                                                <option>Pakistan</option>
+                                                <option>Russia</option>
+                                                <option>USA</option>
                                               </select>
                                             <div class="invalid-feedback">
                                               Please provide a valid city.
@@ -107,7 +117,7 @@
                                     <!---_-----------{  Zip select box  }-----------_-->
                                           <div class="col-md-3">
                                             <label for="validationCustom05" class="form-label">Zip</label>
-                                            <input type="text" class="form-control" id="validationCustom05" required>
+                                            <input type="text" class="form-control" id="validationCustom05" minlength="4" maxlength="4" required>
                                             <div class="invalid-feedback">
                                               Please provide a valid zip.
                                             </div>
@@ -148,6 +158,45 @@
                                     </div>
                                 </div>
                                 <hr>
+                                <!---_-----------{  Card Details section }-----------_-->
+                                <div class="form-group">
+                                    <div class="row">
+                                    <!---_-----------{  Card name section }-----------_-->
+                                        <div class="col-6">
+                                            <div class="my-3">
+                                                <label for="CardName" class="form-label">Name of Card</label>
+                                                <input type="text" class="form-control" id="CardName" placeholder="Name of Card..." required>
+                                                <div class="invalid-feedback">
+                                                   Enter full name display on Card
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!---_-----------{  Card Number section }-----------_-->
+                                        <div class="col-6">
+                                            <div class="my-3">
+                                                <label for="CardNamber" class="form-label">Credit Card Number</label>
+                                                <input type="tel" class="form-control" id="CardNamber" placeholder="credit Card Number..." minlength="16" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---_-----------{  more Card option section }-----------_-->
+                                <div class="form-group pb-4">
+                                    <div class="row">
+                                    <!---_-----------{  Expiation section }-----------_-->
+                                        <div class="col-3">
+                                            <label for="date" class="form-label">Expiation</label>
+                                            <input type="date" class="form-control" id="date" required>
+                                        </div>
+                                    <!---_-----------{  CVV section }-----------_-->
+                                        <div class="col-3">
+                                            <label for="cvv" class="form-label">CVV</label>
+                                            <input type="text" class="form-control" id="cvv" placeholder="CVV..." required>
+                                        </div>
+                                        <div class="col-6"></div>
+                                    </div>
+                                </div>
+                                <hr>
                                 <!---_-----------{  Submit btn section }-----------_-->
                                 <input class="btn w-100 btn-secondary" type="button" value="Continue to checkout">
                             </form>
@@ -155,47 +204,50 @@
                     </div>
                 <!--O_-----------{  Start Card section  }-----------_-->
                     <div class="col-3">
-                        <div class="card border-0">
+                        <div class="card border-0 pt-5">
                         <!---_-----------{  card heading section }-----------_-->
                             <div class="card-head">
-                                <h3>Your cart <span class="badge text-end bg-secondary">3</span></h3>
+                                <h3>Your cart <span class="badge rounded-pill bg-secondary right">3</span></h3>
                             </div>
                         <!---_-----------{  card Body section }-----------_-->
                             <div class="card-body">
-                                <div class="line-01 border p-2">
-                                    <h5 class="">Product name</h5>
-                                    <h6>lorem</h6>
+                                <div class="line-01 border rounded-1 p-2">
+                                    <h5 class="">Product name <span class="right me-2">$12</span></h5>
+                                    <h6 class="gray">lorem</h6>
                                 </div>
                                 <div class="line-02 border p-2">
-                                    <h5>Product name</h5>
-                                    <h6>lorem</h6>
+                                    <h5 class="">Product name <span class="right me-2">$8</span></h5>
+                                    <h6 class="gray">lorem</h6>
                                 </div>
                                 <div class="line-03 border p-2">
-                                    <h5>Product name</h5>
-                                    <h6>lorem</h6>
+                                    <h5 class="">Product name <span class="right me-2">$5</span></h5>
+                                    <h6 class="gray">lorem</h6>
                                 </div>
                                 <div class="line-04 border p-2">
-                                    <h5>Product name</h5>
-                                    <h6>lorem</h6>
+                                    <h5 class="">Discount <span class="right me-2">-$5</span></h5>
+                                    <h6 class="gray">Code</h6>
                                 </div>
                                 <div class="line-05 border p-2">
-                                    <h5>Product name</h5>
-                                    <h6>lorem</h6>
+                                    <h5>Total(USD) <span class="right me-2">= $20</span></h5></h5>
                                 </div>
                             </div>
                         <!---_-----------{  card btn section }-----------_-->
                             <div class="box">
-                                <div class="under">
-                                    <div class="input"></div>
+                                <div class="under border p-2">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Promo Code ..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                                        <button class="btn btn-secondary" type="button" id="button-addon2">Redeem</button>
+                                      </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-			</header>
-        <!--//_---------------{  Header section  }---------------//-->
+            </div>
+        </div>
         <!--G_---------------{  Start Footer section  }---------------_-->
             <footer>
+                <p class="gray pt-5"> &copy; Design by ~<em> Bisakto Rahi</em></p>
 			</footer>
         <!--//_---------------{  Footer section  }---------------//-->
         </div>
