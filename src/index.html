@@ -20,7 +20,8 @@
     </title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
-        body{
+
+        body {
             font-family: 'salsa';
         }
     </style>
@@ -42,7 +43,34 @@
         <div class="body">
             <h1 class="text-4xl fint-bold py-2">Billing Address</h1>
             <div class="form">
-
+                <form action="/api/user/login" method="POST">
+                    <div class="mt-2 ">
+                        <label for="fName" class="text-lg text-gray-900 p-0.5">First Name:</label>
+                        <input type="text" class="border-2 rounded-sm px-2 py-0.5 w-full hover:border-gray-300 hover:shadow active:border-gray-500 outline-none" placeholder="Enter your first Name..." id="fName" name="fName">
+                    </div>
+                    <div class="my-2">
+                        <label for="lName" class="text-lg text-gray-900 p-0.5">Last Name</label>
+                        <input type="text" class="border-2 rounded-sm px-2 py-0.5 w-full hover:border-gray-300 hover:shadow active:border-gray-500 outline-none" placeholder="Enter your last Name..." id="lName" name="lName">
+                    </div>
+                    <div class="my-2">
+                        <label for="phone" class="text-lg text-gray-900 p-0.5">Phone</label>
+                        <input type="phone" class="border-2 rounded-sm px-2 py-0.5 w-full hover:border-gray-300 hover:shadow active:border-gray-500 outline-none" placeholder="Enter your phone Number..." id="phone" name="phone">
+                    </div>
+                    <div class="my-2">
+                        <label for="age" class="text-lg text-gray-900 p-0.5">Age</label>
+                        <input type="number" class="border-2 rounded-sm px-2 py-0.5 w-full hover:border-gray-300 hover:shadow active:border-gray-500 outline-none" placeholder="Enter your Age..." id="age" name="age">
+                    </div>
+                    <div class="my-2">
+                        <label for="country" class="text-lg text-gray-900 p-0.5">Country</label>
+                        <input type="text" class="border-2 rounded-sm px-2 py-0.5 w-full hover:border-gray-300 hover:shadow active:border-gray-500 outline-none" placeholder="Enter your Country..." id="country" name="country">
+                    </div>
+                    <div class="my-4">
+                        <textarea class="border-2 rounded-sm px-2 py-0.5 w-full hover:border-gray-300 hover:shadow active:border-gray-500 outline-none" name="message" id="message" placeholder="Enter your Message..." rows="10"></textarea>
+                    </div>
+                    <div class="w-1/4 m-auto">
+                        <button type="submit" class="border-2 rounded-md px-2 py-1 w-full hover:border-gray-300 hover:shadow hover:bg-slate-950 active:border-gray-500 outline-none text-white bg-gray-900 font-bold">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

@@ -1,9 +1,10 @@
 const express = require("express")
 const app = express();
-const bodyParser = require("body-parser")
+const userRouter = require("./routers/user.route")
 
+app.use("/api/user", userRouter);
 
-app.get("", (req, res) => {
+app.get("/", (req, res) => {
     res.send("Welcome TO my web server");
 })
 
